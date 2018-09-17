@@ -8,10 +8,12 @@
 
     <!-- Award -->
     {% block award %}
+        <div class=“issuer-certificate”>
+            <img src=“{{ award.certImage }}“/>
+        </div>
         <div class="issuer-logo">
             <img src="{{ award.logoImg }}"/>
         </div>
-
         <div class="certificate-owner">
             <h1>{{ award.name }}</h1>
         </div>
@@ -58,5 +60,3 @@
     </div>
 
 {% endblock %}
-
-
