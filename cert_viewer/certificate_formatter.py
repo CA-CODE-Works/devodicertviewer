@@ -10,7 +10,7 @@ def certificate_to_award(displayable_certificate):
         'title': displayable_certificate.title,
         'organization': displayable_certificate.issuer.name,
         'text': displayable_certificate.description,
-        ‘certImage’: displayable_certificate.certificate_json[“badge”][“image”],
+        'certImage': displayable_certificate.certificate_json["badge"]["image"],
         'issuerID': displayable_certificate.issuer.id,
         'chain': get_displayable_blockchain_type(displayable_certificate.chain.blockchain_type),
         'transactionID': displayable_certificate.txid,
