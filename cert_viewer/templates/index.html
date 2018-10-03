@@ -11,9 +11,9 @@
 
 {% block content %}
     {% with messages = get_flashed_messages() %}
-        <div class="issuer-logo">
+        <!--<div class="issuer-logo img-center">
             <img src="{{ theme_static(config.ISSUER_LOGO_PATH) }}"/>
-        </div>
+        </div>-->
 
         <div class="intro-title">
             <h1>{{ config.ISSUER_NAME }}</h1>
@@ -28,7 +28,6 @@
             </div>
     {% else %}
         <div class="intro-text">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
             mus. Donec qam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
             quis enim.

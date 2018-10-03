@@ -22,8 +22,10 @@
         <!-- CSS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         {% block css %}
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <link rel=stylesheet type=text/css href="{{ theme_static('css/style.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro|UnifrakturMaguntia" rel="stylesheet">
+        <link rel=stylesheet type=text/css href="{{ theme_static('css/cagov.core.css') }}">
+        <link rel=stylesheet type=text/css href="{{ theme_static('css/colorscheme-oceanside.css') }}">
+        <link rel=stylesheet type=text/css href="{{ theme_static('css/style.css') }}">
         {% endblock %}
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -34,24 +36,60 @@
 </head>
 
 <body>
+  <header role="banner" id="header" class="global-header">
+    <div class="branding">
+        <div class="header-organization-banner"><a href="/"><img src="{{ theme_static(config.ISSUER_LOGO_PATH) }}" /></a></div>
+    </div>
+    <div class="mobile-controls">
+      <div class="mobile-control-group main-nav-icons float-right">
+            <!-- mobile icons goes here -->
+      </div>
+    </div>
+    <div class="navigation-search">
+    </div>
+</header>
+<div id="main-content" class="main-content p-b-lg p-t-md">
+        <main class="main-primary">
 <div class="container">
 
     <!-- Content
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     {% block content %}{% endblock %}
 
+
+    </div>
+  </main>
+
+</div>
+
     <!-- Footer
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="footer">
         {% block footer %}
-            <div class="contact">Contact: <a href="mailto:{{ config.ISSUER_EMAIL }}">{{ config.ISSUER_EMAIL }}</a></div>
-            <div class="faq_link">Questions? Check out our <a href="/faq">FAQ page</a></div>
-            <div class="home_links"><a href="/">Home</a>&nbsp;|&nbsp;<a href="http://www.blockcerts.org/">Powered by the
-                Blockchain Certificates Project</a></div>
+        <footer id="footer" class="global-footer">
 
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <ul class="footer-links">
+                        <li>Contact: <a href="mailto:{{ config.ISSUER_EMAIL }}">{{ config.ISSUER_EMAIL }}</a></li>
+                        <li>Questions? Check out our <a href="/faq">FAQ page</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear())</script> State of California
+                </div>
+            </div>
+
+        </footer>
         {% endblock %}
     </div>
-</div>
+
 
 {% block scripts %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"/>

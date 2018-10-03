@@ -1,13 +1,20 @@
 /* styles for award.html pages */
 
-.certificate-meta,
-.certificate-name,
-.issuer-name{
+.certificate-meta
+.issuer-name {
     font-size: 1.85rem;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: -0.05rem;
     display: block;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.certificate-meta .certificate-name {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: 'UnifrakturMaguntia', cursive;
+  display: block;
 }
 
 .certificate-meta {
@@ -25,8 +32,11 @@
 }
 
 #signature-img {
-    margin-bottom: 70px;
-    max-height: 40px;
+    margin-bottom: 30px;
+    max-height: 120px;
+    max-width: 400px;
+      margin: 0 auto;
+      display: block;
 }
 
 .signature-info {
@@ -54,7 +64,6 @@
 
 .issuer-logo {
     margin-bottom: 30px;
-    max-width: 350px;
 }
 
 .issuer-logo img {
@@ -63,6 +72,13 @@
 
 .certificate-owner {
     margin-bottom: 15px;
+}
+
+.certificate-owner h1 {
+  font-weight: 800 !important;
+  font-size: 4rem !important;
+  margin-bottom: 20px;
+margin-top: 1.3em;
 }
 
 .certificate-meta {
@@ -93,3 +109,12 @@
     }
 }
 
+.cert-background {
+  background: url('../img/cert.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top center;
+border-bottom: 5px solid #dfc780;
+max-width: 950px;
+    margin: 0 auto;
+}

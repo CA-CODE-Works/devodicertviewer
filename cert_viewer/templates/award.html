@@ -8,24 +8,25 @@
 
     <!-- Award -->
     {% block award %}
-        <div class=“issuer-certificate”>
+    <div class="cert-background" style="padding-top:220px">
+        <!--<div class=“issuer-certificate”>
             <img src=“{{ award.certImage }}“/>
-        </div>
-        <div class="issuer-logo">
+        </div>-->
+        <!--<div class="issuer-logo">
             <img src="{{ award.logoImg }}"/>
-        </div>
-        <div class="certificate-owner">
+        </div>-->
+        <div class="certificate-owner text-center">
             <h1>{{ award.name }}</h1>
         </div>
 
-        <div class="certificate-meta">
+        <div class="certificate-meta text-center">
             <span class="certificate-name">{{ award.title }}</span>
             <span class="issuer-name">{{ award.organization }}</span>
             <span class="date-span">{{ award.subtitle }}</span>
         </div>
 
-        <div class="certificate-description">
-            <p>{{ award.text }}</p>
+        <div class="certificate-description  text-center">
+            <div class="row"><div class="col-sm-offset-2 col-sm-8"><p>{{ award.text }}</p></div></div>
         </div>
 
         {% if award.signatureImg %}
@@ -33,7 +34,7 @@
                 <img src="{{ award.signatureImg }}" id="signature-img" alt="Signature"/>
             </div>
         {% endif %}
-
+      </div>
     {% endblock %}
 
     <div class="verify">
