@@ -281,3 +281,22 @@ ul.verifying {
 #progress-msg {
     display: none;
 }
+
+
+.my-wallet {
+  right: 10px;
+}
+
+.my-wallet img {
+  width:70px !important; height: 70px;
+  position: relative;
+  top: 10px;
+  z-index: 9;
+}
+
+.mobile-controls {min-height: 80px;}
+
+.img-centered {display: block;margin: 0 auto;}
+
+.cert-footer img {width: 100%; max-width: 950px; margin: 0 auto; display: block;object-fit: contain !important;
+  object-position: left;}
