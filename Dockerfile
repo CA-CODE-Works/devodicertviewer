@@ -1,5 +1,5 @@
 FROM python:3
-MAINTAINER Kim Duffy "kimhd@mit.edu"
+MAINTAINER Shamal Siwan "shamal.siwan@state.ca.gov"
 
 WORKDIR /cert-viewer
 
